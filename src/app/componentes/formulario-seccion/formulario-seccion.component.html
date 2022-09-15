@@ -1,0 +1,9 @@
+<fieldset>
+  <h1>Crear Clase</h1>
+  <label for=""> Nombre Sección</label><br>
+  <input type="text" [value]="nuevaSeccion.nombreSeccion" (input)="cambiarNombreSeccion($event)">
+</fieldset>
+<fieldset>
+  <button type="button" role="button" (click)="guardarSeccion()">Guardar</button>
+</fieldset>
+<br>

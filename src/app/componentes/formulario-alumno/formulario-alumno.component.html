@@ -1,0 +1,26 @@
+<div><h1>Ingresar Alumno</h1></div>
+<fieldset>
+  <label for="">Ingresar RUT </label><br>
+  <input type="text" [value]="nuevoAlumno.rut" (input)="cambiarRut($event)">
+</fieldset>
+<fieldset>
+  <label for="">Ingresar Nombre</label><br>
+  <input type="text" [value]="nuevoAlumno.nombre" (input)="cambiarNombre($event)">
+</fieldset>
+<fieldset>
+  <label for="">Ingresar Apellido</label><br>
+  <input type="text" [value]="nuevoAlumno.apellido" (input)="cambiarApellido($event)">
+</fieldset>
+<fieldset>
+  <label for="">Ingresar Edad</label><br>
+  <input type="text" [value]="nuevoAlumno.edad" (input)="cambiarEdad($event)" >
+</fieldset>
+<fieldset>
+  <p>Seleccionar Clase</p>
+  <select name="" id="">
+    <option value="" ></option>
+  </select>
+</fieldset>
+<fieldset>
+  <button type="button" role="button"  (click)="guardarAlumno()" >Guardar</button>
+</fieldset>

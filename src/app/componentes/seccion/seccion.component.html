@@ -1,0 +1,18 @@
+<table>
+  <div [id]="seccion.id">
+    <thead>
+
+      <tr>
+        <th>id</th>
+        <th>Nombre Clase</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{seccion.id}}</td>
+        <td>{{seccion.nombreSeccion}}</td>
+      </tr>
+    </tbody>
+    <button (click)="emitirId2()">Eliminar</button>
+  </div>
+</table>

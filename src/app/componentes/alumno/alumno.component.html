@@ -1,0 +1,23 @@
+<table>
+  <div [id]="alumno.id">
+    <thead>
+      <tr>
+        <th>RUT</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>Sección</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ alumno.rut}}</td>
+        <td>{{ alumno.nombre}}</td>
+        <td>{{ alumno.apellido}}</td>
+        <td>{{ alumno.edad}}</td>
+        <td></td>
+      </tr>
+    </tbody>
+    <button (click)="emitirId()">Eliminar</button>
+  </div>
+</table>

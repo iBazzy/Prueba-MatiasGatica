@@ -1,0 +1,7 @@
+<section>
+  <app-seccion *ngFor="let item of seccion"
+  [seccion]="item"
+  (idSeccion)="escuharId2($event)">
+
+  </app-seccion>
+</section>

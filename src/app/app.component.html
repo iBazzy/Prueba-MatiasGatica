@@ -1,0 +1,25 @@
+
+<app-formulario-seccion
+(salida2)="escucharAlHijo"
+(salidaString2)="escucharDetalle($event)"
+(sendInfo)="agregarSeccion($event)"
+>
+
+</app-formulario-seccion>
+
+<app-lista-historial
+[seccion]="seccionGuardado"
+(PosIndex2)="eliminarSeccion($event)">
+
+</app-lista-historial>
+
+<app-formulario-alumno (salida)="escucharAlHijo()"
+(salidaString)="escuchandoDetalle($event)"
+(enviar)="agregarAlumno($event)">
+
+</app-formulario-alumno>
+
+<app-lista-alumnos [alumno]="alumnoGuardado"
+(posIndex)="eliminarAlumno($event)">
+
+</app-lista-alumnos>
